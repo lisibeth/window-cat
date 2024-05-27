@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+
+*{
+  font-family: 'Schoolbell', cursive;
+  font-size: 1.1em;
+ --blue: #38A9A6;
+ --sky-blue: #A9D4E7;
+ --green: #9ECDA5;
+ --soft-green: #DFE8BC;
+ --dark: #483E35;
+ --color: #D06D6C; 
+  --yellow: #DD8344;
+  --night: #111A32;
+}
+
+body{
+   
+    width: 100%;
+    height: 100vh;
+    overflow:hidden;
+    background-image: url(./img/fondo.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.fondo {
+ 
+  padding: 3em;
+  position: relative;
+  width: 1500px;
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+.contenedor
+{
+  position: relative;
+  width: 400px;
+  height: 400px;
+  border: solid 3px rgba(255, 255, 255, 0.534);
+  margin-left: auto;
+  margin-right: auto;
+ 
+  box-shadow: 5px 5px 5px  var(--dark);
+  
+}
+
+.buttons {
+  display: relative;
+}
+
+.luz{
+  position:absolute;
+  border-width: 280px;
+  border-style: solid;
+  border-color: transparent rgba(238, 247, 125, 0.288) 
+   rgba(238, 247, 125, 0.288) transparent;
+  left: 62.9%;
+  top: 40%;
+  transform: rotate(225deg);
+  z-index:1;
+}
+
+.lampara{
+   position:absolute;
+  border-width: 80px;
+  border-style: solid;
+  border-color: transparent rgb(119, 101, 18) rgba(119, 101, 18)
+  transparent;
+  left: 75.5%;
+  top: 11%;
+  transform: rotate(225deg);
+  border-radius: 30%;
+  z-index:3;
+  
+}
+
+.lampara2{
+   position:absolute;
+  border-width: 30px;
+  border-style: solid;
+  border-color: yellow;
+ z-index:2;
+  left: 78.6%;
+  top: 19%;
+  transform: rotate(225deg);
+  border-radius: 50%;
+}
+
+
+.cable{
+  position: absolute;
+  width: 10px;
+  height: 100px;  ;  
+  top: 0%;
+  right: 18.9%;
+  background-color: var(--dark);
+  border-width: 5px;
+  border-color: gray;
+  border-style: solid;
+  border-radius: 50%;
+}
+
+
+.cuadro1
+{
+  position: absolute;
+  border: 1px solid black;
+  width: 185px;
+  height: 185px;
+  top:2%;
+  left: 2%;
+  z-index: 2;
+  background-color: var(--sky-blue);
+}
+
+.cuadro2
+{
+  position: absolute;
+  z-index: 2;
+  border: 1px solid black;
+  width: 185px;
+  height: 185px;
+  top:2%;
+  left: 51%;
+  background-color: white;
+  background-color: var(--sky-blue);
+}
+
+.cuadro3
+{
+  position: absolute;
+  z-index: 2;
+  border: 1px solid black;
+  width: 185px;
+  height: 185px;
+  top:51%;
+  left: 51%;
+  background-color: var(--sky-blue);
+}
+
+.cuadro4
+{
+  position: absolute;
+  z-index: 2;
+  border: 1px solid black;
+  width: 185px;
+  height: 185px;
+  top:51%;
+  left: 2%;
+  background-color: var(--sky-blue);
+}
+
+.cuerpo-gato1
+{
+  position: absolute;
+  z-index: 3;
+  border: 1px solid black;
+  width: 70px; 
+  height: 90px;
+  border-radius: 50% 50% 29% 29%;
+  top: 74.5%;
+  right: 10%; 
+  background: black;
+  
+}
+
+.sol {
+  position: absolute;
+  z-index: 3;
+ 
+  width: 50px; 
+  height: 50px;
+  border-radius: 50%;
+  top: 11.5%;
+  right: 72%; 
+  background: var(--yellow);
+}
+
+.sol2{
+  position: absolute;
+  z-index: 2;
+  width: 60px; 
+  height: 60px;
+  border-radius: 50%;
+  top: 10.6%;
+  right: 70.9%; 
+  background: yellow;
+}
+
+.cabeza-gato1
+{
+  position: absolute;
+  z-index: 3;
+  width: 45px;
+  height: 38px;
+  border: 1px solid black;
+  border-radius: 48%;
+  top: 66%;
+  right: 13.6%;
+  background: black;
+}
+
+.oreja1
+{
+  position: absolute;
+  z-index: 3;
+  top: 62.2%;
+  right: 21%;
+  border-color: transparent transparent black;
+  border-width: 12.5px;
+  border-style: solid;
+  transform: rotate(-33deg);
+ 
+}
+
+.oreja2
+{
+  position: absolute;
+  z-index: 3;
+  top: 61.5%;
+  right: 12.5%;
+  border-color: transparent transparent black;
+  border-width: 12.5px;
+  border-style: solid;
+  transform: rotate(25deg);
+ 
+}
+
+.rabo1
+{
+  position:absolute;
+  z-index: 3;
+  width: 120px; 
+  height: 100px;  
+  border: solid 11px #000;
+  border-color: #000 transparent transparent transparent;
+  border-radius: 50%/100px 100px 0 0;
+  transform: rotate(120deg);
+  top: 80%;
+  right: 15%;
+   animation-iteration-count: infinite;
+   animation-duration: 3s;
+  animation-name: slidein;
+
+}
+
+
+
+.rabo2
+{
+  position: absolute;
+  z-index: 3;
+  width: 13px;
+  height: 17px;
+  background-color: black;
+  top: 106%;
+  right:29%;
+  border-radius: 50%;
+  transform: rotate(60deg);
+  
+}
+
+.bigote1
+{
+  position: absolute;
+  z-index: 4;
+  width: 50px; 
+  height: 100px;  
+  border: solid 2px #000;
+  border-color: #000 transparent transparent transparent;
+  border-radius: 50%/100px 100px 0 0;
+  
+  top: 72%;
+  right: 21%;
+  transform: rotate(30deg);
+  
+}
+
+.bigote2
+{
+  position: absolute;
+  z-index: 4;
+  width: 50px; 
+  height: 100px;  
+  border: solid 2px #000;
+  border-color: #000 transparent transparent transparent;
+  border-radius: 50%/100px 100px 0 0;
+  top: 70%;
+  right: 22%;
+  transform: rotate(30deg);
+  
+}
+
+.bigote3{
+  position: absolute;
+  z-index: 4;
+  width: 50px; 
+  height: 100px;  
+  border: solid 2px #000;
+  border-color: #000 transparent transparent transparent;
+  border-radius: 50%/100px 100px 0 0;
+  top: 71%;
+  right: 21%;
+  transform: rotate(30deg);
+}
+
+.bigote4
+{
+  position: absolute;
+  z-index: 4;
+  width: 20px;
+  border: solid 1px #000;
+  top: 70%;
+  right: 12%;
+  transform: rotate(20deg);
+}
+
+.bigote5
+{
+  position: absolute;
+  z-index: 4;
+  width: 20px;
+  border: solid 1px #000;
+  top: 71%;
+  right: 12%;
+  transform: rotate(20deg);
+}
+
+.bigote6
+{
+  position: absolute;
+  z-index: 4;
+  width: 20px;
+  border: solid 1px #000;
+  top: 72%;
+  right: 12%;
+  transform: rotate(20deg);
+}
+
+button
+{
+ position: absolute;
+ width:220px;
+ height: 70px;
+ box-shadow: 0 0 40px #fff;
+ border-radius: 10px;
+}
+
+.noche{
+ position: absolute;
+ z-index: 4;
+ left:18%;
+ top: 35%;
+ background-color:#C2B769;
+}
+
+.luna
+{
+ z-index: 4;
+ left: 18%;
+ top: 35%;
+ background-color: pink;
+}
+
+.luna1
+{
+  position: absolute;
+  z-index: 6;
+  width: 60px;
+  height: 60px;
+  top: 10%;
+  left: 13%;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 0 8.5px #fff;
+  
+}
+
+.luna2
+{
+  position: absolute;
+  z-index: 7;
+  width: 60px;
+  height: 60px;
+  top: 10%;
+  left: 18%;
+  border-radius: 50%;
+  background-color:var(--night);
+  
+}
+
+.estrellas {
+ z-index: 7;
+ left: 18%;
+ top: 35%;
+ background-color: yellow;
+}
+
+.deseo {
+  z-index: 7;
+  left:18%;
+  top:35%;
+  background-color: orange;
+  
+}
+
+.estrella {
+  position: absolute;
+  z-index: 7;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: yellow;
+}
+
+#estrella1 {
+  top: 30%;
+  left:35%;
+}
+
+#estrella2 {
+  top: 20%;
+  left:65%;
+}
+
+#estrella3 {
+  top: 10%;
+  left:75%;
+}
+
+#estrella4 {
+  top: 35%;
+  left:75%;
+}
+
+#estrella5 {
+  top: 60%;
+  left:25%;
+}
+
+#estrella6{
+  top: 70%;
+  left: 60%;
+}
+
+#estrella7 {
+  top: 59%;
+  left: 89%;
+}
+
+#estrella8 {
+  top: 6%;
+  left: 92%;
+}
+
+#estrella9 {
+  top: 21%;
+  left: 4%;
+}
+
+#estrella10 {
+  top: 9%;
+  left: 32%;
+}
+
+#estrella11 {
+  top: 13%;
+  left: 62%;
+}
+
+#estrella12 {
+  top: 32%;
+  left: 12%;
+}
+
+#estrella13 {
+  top: 38%;
+  left: 39%;
+}
+
+
+#estrellafugaz {
+  top: 45%;
+  left: 5%;
+  animation-name: spin;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+   
+}
+
+
+@keyframes spin {
+ from {
+  
+    width: 1%; 
+  }
+
+  75% {
+   top: 10%;
+    margin-left: 25%;
+    width: 1%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 0%;
+    
+  }
+}
+
+
+button {
+  font-size: 0.8em;
+   opacity: .8;
+    transition: all 300ms linear;
+}
+
+button:hover {
+    transition: all 150ms linear;
+    background: white;
+  }
